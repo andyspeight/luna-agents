@@ -1,0 +1,26 @@
+# dependencies
+/node_modules
+
+# next.js build output
+/.next
+/out
+
+# generated Stage 1 output (re-created by `npm run stage1`)
+*.out.json
+
+# secrets — server-side only, never committed (.env.example IS tracked)
+.env
+.env.local
+.env.*.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / editor cruft
+.DS_Store
+.idea
+.vscode
+*.pem
