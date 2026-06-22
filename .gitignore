@@ -5,8 +5,9 @@
 /.next
 /out
 
-# generated Stage 1 output (re-created by `npm run stage1`)
+# generated output (re-created by the run scripts)
 *.out.json
+*.out.html
 
 # secrets — server-side only, never committed (.env.example IS tracked)
 .env

@@ -4,6 +4,9 @@ export * from './sanitise';
 export * from './mapping';
 export * from './scoring';
 export * from './ingest';
+export * from './digest';
+export * from './supabase';
+export * from './persist';
 
 import { parseCsvToObjects } from './csv';
 import { ingestRows, type IngestResult } from './ingest';
