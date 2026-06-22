@@ -1,0 +1,27 @@
+{
+  "name": "luna-agents",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Luna Agents - Phase 0 'found money' re-engagement agent. Stage 1: ingest a pilot's pipeline export and rank opportunities with reason codes.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "stage1": "tsx scripts/run-stage1.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
+}

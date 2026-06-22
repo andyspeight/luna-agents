@@ -1,0 +1,34 @@
+{
+  "client_id": "pts",
+  "source": "csv",
+  "columns": {
+    "customer_id": "Client Ref",
+    "customer_name": "Customer",
+    "customer_email": "Email",
+    "customer_phone": "Phone",
+    "destination": "Destination",
+    "travel_dates": "Travel Dates",
+    "party_size": "Pax",
+    "quote_value": "Quote (£)",
+    "budget": "Budget (£)",
+    "currency": "Currency",
+    "source_status": "Status",
+    "last_activity_at": "Last Contact",
+    "is_repeat_customer": "Repeat?",
+    "return_date": "Returned On",
+    "notes": "Notes"
+  },
+  "defaults": {
+    "currency": "GBP",
+    "consent_ok": false
+  },
+  "status_to_type": {
+    "quote": "cold_quote",
+    "quoted": "cold_quote",
+    "enquiry": "unconverted_enquiry",
+    "no quote": "unconverted_enquiry",
+    "returned": "rebook_due",
+    "past customer": "rebook_due",
+    "completed": "rebook_due"
+  }
+}

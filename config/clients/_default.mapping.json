@@ -1,0 +1,31 @@
+{
+  "client_id": "_default",
+  "source": "csv",
+  "columns": {
+    "customer_id": "customer_id",
+    "customer_name": "name",
+    "customer_email": "email",
+    "customer_phone": "phone",
+    "destination": "destination",
+    "travel_dates": "travel_dates",
+    "party_size": "party_size",
+    "quote_value": "quote_value",
+    "budget": "budget",
+    "currency": "currency",
+    "source_status": "status",
+    "last_activity_at": "last_contact",
+    "is_repeat_customer": "repeat",
+    "return_date": "returned_on",
+    "notes": "notes"
+  },
+  "defaults": {
+    "currency": "GBP",
+    "consent_ok": false
+  },
+  "status_to_type": {
+    "quote": "cold_quote",
+    "enquiry": "unconverted_enquiry",
+    "returned": "rebook_due",
+    "past": "rebook_due"
+  }
+}
