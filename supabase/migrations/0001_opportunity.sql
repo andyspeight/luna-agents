@@ -67,7 +67,8 @@ create index if not exists opportunity_client_lastactivity_idx
 
 -- keep updated_at honest
 create or replace function public.set_updated_at()
-returns trigger language plpgsql as $$
+returns trigger language plpgsql
+  set search_path = '' as $$
 begin
   new.updated_at = now();
   return new;
